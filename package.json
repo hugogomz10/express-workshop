@@ -1,10 +1,15 @@
 {
   "name": "express-workshop",
   "version": "1.0.0",
-  "description": "An API REST using express.js",
+  "description": "This is a project for the node.js workshop",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugogomz10/express-workshop.git"
   },
   "keywords": [
     "api",
@@ -14,7 +19,12 @@
   ],
   "author": "Hugo GH",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugogomz10/express-workshop/issues"
+  },
+  "homepage": "https://github.com/hugogomz10/express-workshop#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
   }
 }
