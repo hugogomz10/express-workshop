@@ -13,7 +13,7 @@ pokemon.get('/', async (req, res, next) => {
 
 pokemon.get('/:id([0-9]{1,3})', async (req, res, next) => {
     const id = req.params.id - 1;
-    id = await db.query("SELECT pok_id FROM pokemon WHERE pok_id = id");
+    const id = await db.query("SELECT pok_id FROM pokemon WHERE pok_id = ?", id);
     if(id >= 0 && id <= 722) {
         return res.status(200).json(id[req.params.id - 1]);
     }
